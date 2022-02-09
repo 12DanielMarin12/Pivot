@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title> 
+    <style>
+        form { 
+            margin: 0 auto;
+            width: 400px; 
+            padding: 1em;
+            border: 1px solid #CCC;
+            border-radius: 1em;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        form li + li {
+            margin-top: 1em;
+        }
+
+        label { 
+            display: inline-block;
+            width: 90px;
+            text-align: right;
+        }
+
+        input, textarea { 
+            font: 1em sans-serif; 
+            width: 300px;
+            box-sizing: border-box; 
+            border: 1px solid #999;
+            text-align: center; 
+            width: 100%;
+        }
+
+        input:focus, textarea:focus {  
+            border-color: #000;
+        }
+
+        textarea { 
+            vertical-align: top; 
+            height: 5em;
+        }
+
+
+        button { 
+            width: 100%;
+            margin-top: 30px;
+        } 
+    </style>
+</head>
+<body>
+
+<!--
+    <section class="form-register">
+        <h4>Registro</h4>
+        <input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+        <input class="controls" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
+        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su correo">
+        <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña">
+        <p>Estoy de acuerdo con <a href="#">Terminos y condiciones</a></p>
+        <input class="boton" type="submit" value="Registrar">
+        <p><a href="#">Ya tengo cuenta</a></p>
+    </section>
+-->
+
+        <form  method="post" action="#">
+            <ul>
+                <li> 
+                    <input type="text" id="name" name="user_name" placeholder="Nombre" pattern="[a-zA-Z]+">
+                </li>
+                <li> 
+                    <input type="text" id="lastname" name="user_lastname" placeholder="apellido" pattern="[a-zA-Z]+">
+                </li>
+                <li> 
+                    <input type="email" id="mail" name="user_mail" placeholder="correo electronico">    
+                </li>
+                <li> 
+                    <input type="identify" id="identify" name="user_identify" placeholder="identificacion">
+                </li>
+                <li>
+                    <input minlength="8" type="password" id="password" name="user_pasword" placeholder="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" >
+                </li> 
+                <input type="submit" value="submit">
+
+            </ul>   
+        </form>
+
+
+
+
+</body>
+</html>
